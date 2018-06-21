@@ -335,7 +335,9 @@ footer {
   justify-content: space-around;
   position: absolute;
   height: auto;
-  width: 100vw; }
+  width: 100vw;
+  padding: 20px 0 40px 0;
+}
 
 .footer-discription {
   display: flex;
