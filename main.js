@@ -8,6 +8,9 @@ const menu = document.querySelector('.menu');
 const menuBar = document.querySelector('.menu-bar');
 const mobileItem = document.querySelector('.menu-text');
 const navItems = document.querySelectorAll('.click-menu')
+const about = document.querySelector('.about-section')
+const kos = document.querySelector('.kos')
+
 
 const two = document.querySelector('.two');
 const line = document.querySelector('.line')
@@ -84,6 +87,7 @@ function updateUI(data){
 
 
 }
+
 
 url()
 

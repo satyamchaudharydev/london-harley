@@ -328,6 +328,8 @@ body {
   font-size: 30px; }
 
 footer {
+  position: relative;
+  overflow: hidden;
   background: #272D38;
   display: flex;
   flex: 1;
@@ -389,7 +391,7 @@ footer {
 
 .event {
   position: absolute;
-  top: 115px;
+  top: 127px;
   z-index: 50;
   /* line-height: 50px; */
   left: 76%; }
