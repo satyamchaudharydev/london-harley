@@ -10,13 +10,18 @@ const mobileItem = document.querySelector('.menu-text');
 const navItems = document.querySelectorAll('.click-menu')
 const about = document.querySelector('.about-section')
 const kos = document.querySelector('.kos')
-
-
+const input =document.querySelector('input')
+const wrong = document.querySelector('.wrong')
+const searchOverlay = document.querySelector('.search-overlay')
 const two = document.querySelector('.two');
 const line = document.querySelector('.line')
+const searchAble = document.querySelector('.search-able')
+const menuSearchAble = document.querySelector('.menu-search-able')
+
 const three = document.querySelector('.three');
 const tweetCount = 3
 console.log(navItems)
+input.focus()
 box.addEventListener("click", function(){
   one.classList.toggle('top')
   two.classList.toggle('hide')
@@ -24,7 +29,25 @@ box.addEventListener("click", function(){
   menuBar.classList.toggle('ani')
   mobileItem.classList.toggle('showing');
 });
+wrong.addEventListener('click' , function(){
+  searchOverlay.classList.add('search-hide')
+  input.focus()
 
+})
+
+
+searchAble.addEventListener('click' , function(){
+  console.log('p')
+  searchOverlay.classList.remove('search-hide')
+  input.focus()
+
+})
+menuSearchAble.addEventListener('click' , function(){
+  console.log('p')
+  searchOverlay.classList.remove('search-hide')
+  input.focus()
+
+})
 const clearNavItems = () => {
   navItems.forEach(navItem => {
     navItem.classList.remove('move')

@@ -3,6 +3,45 @@ body {
   padding: 0;
   font-family: 'Lato', sans-serif; }
 
+.click-menu, .consult, i, .menu-text {
+  cursor: pointer; }
+
+.search-hide, .menu-hide {
+  display: none !important; }
+
+.search-overlay {
+  position: fixed;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  background: white;
+  z-index: 200;
+  width: 100vw;
+  height: 100%; }
+  .search-overlay input {
+    width: calc(100vw - 119px);
+    height: 48px;
+    border: none;
+    font-size: 50px;
+    margin-top: 63px;
+    user-select: none;
+    margin-left: 95px; }
+    .search-overlay input:focus {
+      outline: none; }
+  .search-overlay img {
+    width: 100px;
+    height: 98px;
+    margin-top: -16px; }
+
+.key {
+  position: absolute;
+  /* background: red; */
+  width: 100vw;
+  display: grid;
+  justify-content: space-between;
+  left: 30px;
+  grid-template-columns: 14fr 2fr; }
+
 .menu-bar {
   position: fixed;
   width: 100vw;
@@ -48,7 +87,7 @@ body {
   align-items: center;
   height: 80px;
   box-sizing: border-box;
-  box-shadow: 0 1px 20px 0 rgba(46, 61, 73, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 20px 40px;
   padding: 2px 50px;
   background: white; }
 
@@ -337,9 +376,7 @@ footer {
   justify-content: space-around;
   position: absolute;
   height: auto;
-  width: 100vw;
-  padding: 20px 0 40px 0;
-}
+  width: 100vw; }
 
 .footer-discription {
   display: flex;
@@ -391,7 +428,7 @@ footer {
 
 .event {
   position: absolute;
-  top: 127px;
+  top: 115px;
   z-index: 50;
   /* line-height: 50px; */
   left: 76%; }
@@ -507,6 +544,8 @@ footer {
 
 @media screen and (min-width: 1269px) {
   .another-box {
+    display: none; }
+  .menu-bar {
     display: none; } }
 
 @media screen and (max-width: 700px) {
@@ -548,21 +587,3 @@ footer {
   top: 6px;
   opacity: 0.8;
   height: 2px; }
-.prev,.next{
-  position: relative;
-  fill: white;
-  cursor: pointer;
-  transition: 0.3s all ease-in-out;
-
-  user-select: none;
-
-}
-.prev{
-  right: 13px;
-
-}.prev:hover{
-  transform: translateX(-4px)
-}
-.next:hover{
-  transform: translateX(4px)
-}

@@ -100,6 +100,16 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/user.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/user.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		}
 	},
 "hooks": [
@@ -109,7 +119,7 @@
 "projectAttributes": {
 	"creationDate": 550319614,
 	"displayValue": "Website",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-lotr"
 	},
 "projectSettings": {
